@@ -1,3 +1,4 @@
+//Aqui ficam as rotas
 const express = require ('express')
 const router = express.Router();
 const PostsService = require ('../service/postsService');
@@ -7,9 +8,10 @@ router.get('/posts', async function (req, res){
     res.json(posts);
 });
 
-router.post('/posts', async function (req, res){   
-    const posts = await PostsService.postPosts(req.headers);
-    res.json("Cadastrado com sucesso");
+router.post('/posts', async function (req, res){ 
+        const entrada = req.headers
+        const posts = await PostsService.postPosts(entrada);
+        res.json(posts);
 });
 
 //Coisas que talvez eu use mas depois

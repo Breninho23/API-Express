@@ -1,3 +1,4 @@
+//Aqui ficam as regras de negócio
 const postsData = require ('../data/postsData');
 
 exports.getPosts = function (){

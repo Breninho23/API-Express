@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 
+const PORT = 3000;
 app.use('/', require('./route/postsRoute'));
 
-app.listen(3000)
+app.listen(PORT)
+console.log(`Aplicação inicada na porta ${PORT}`);
 //middleware
 //Middleware nada mais é que um conversor da informação para JSON
 
