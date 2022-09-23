@@ -1,10 +1,10 @@
 //Aqui ficam as regras de negócio
 const postsData = require ('../data/postsData');
 
-exports.getPosts = function (){
-    return postsData.getPosts();
+exports.getEvaluations = function (){
+    return postsData.getEvaluations();
 };
 
-exports.postPosts = function (data){
-    return postsData.insertPosts(data);
+exports.postEvaluations = function (data){
+    return postsData.insertEvaluations(data);
 };

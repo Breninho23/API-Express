@@ -3,14 +3,14 @@ const express = require ('express')
 const router = express.Router();
 const PostsService = require ('../service/postsService');
 
-router.get('/posts', async function (req, res){
-    const posts = await PostsService.getPosts();
+router.get('/evaluations', async function (req, res){
+    const posts = await PostsService.getEvaluations();
     res.json(posts);
 });
 
-router.post('/posts', async function (req, res){ 
-        const entrada = req.headers
-        const posts = await PostsService.postPosts(entrada);
+router.post('/evaluations', async function (req, res){ 
+        const values = req.body
+        const posts = await PostsService.postEvaluations(values);        
         res.json(posts);
 });
 
