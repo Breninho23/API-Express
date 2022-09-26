@@ -14,6 +14,11 @@ router.post('/evaluations', async function (req, res){
         res.json(posts);
 });
 
+router.get('/teste', async function (req, res){ 
+    console.log("teste");
+    res.end();
+});
+
 //Coisas que talvez eu use mas depois
 /*
 router.get('posts/:id', async function (req, res){});

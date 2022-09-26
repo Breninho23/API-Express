@@ -1,12 +1,15 @@
 const express = require('express');
 const app = express();
 
-const PORT = 3000;
+//Rodar sem docker é só substituir:
+//process.env.PORT 
+//pela porta que você quer
+const port = 3000;
 app.use(express.json())
 app.use('/', require('./route/postsRoute'));
 
-app.listen(PORT)
-console.log(`Aplicação inicada na porta ${PORT}`);
+app.listen(port)
+console.log(`Aplicação inicada na porta ${port}`);
 //Middleware nada mais é que um conversor da informação para JSON
 
 
