@@ -53,23 +53,49 @@ No caso eu utilizei o Postman mas você pode utilizar qualquer outra aplicação
 ```console
 localhost:3000/posts
 ```
-HEADER:
+BODY para Recepção:
 
 ```console
-receptionattendance
-receptiontime
-receptionnote
-collectattendante
-collecttime
-collectnote
-physiotherapyattendance
-physiotherapytime
-physiotherapynote
+localhost:3000/reception
+{
+    "receptionattendance": 1  ,
+    "receptiontime" : 1,
+    "receptionnote" : "1",
+    "collectattendante": 1,
+    "collecttime" : 1,
+    "collectnote" : "1",
+    "contact" : "(18) 00000-0000",
+    "suggestion" : "",
+    "message" : "teste"   
+}
 ```
-Se tudo der certo será impresso no console da aplicação:
+BODY para Fisioterapia:
 
 ```console
-Cadastrado com sucesso
+localhost:3000/physiotherapy
+
+{
+    "physiotherapyattendance" : 1,
+    "physiotherapytime": 1,
+    "physiotherapynote" : "teste",    
+    "contact": "(18) 00000-0000",
+    "suggestion" : "",
+    "message": "ts"    
+}
+```
+
+Se tudo der certo será retornado o JSON inserido no banco da aplicação:
+
+```console
+ "receptionattendance": 1  ,
+    "receptiontime" : 1,
+    "receptionnote" : "1",
+    "collectattendante": 1,
+    "collecttime" : 1,
+    "collectnote" : "1",
+    "contact" : "(18) 00000-0000",
+    "suggestion" : "",
+    "message" : "teste"  
 ```
 
 ## Requisições de GET :
