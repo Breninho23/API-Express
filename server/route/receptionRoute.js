@@ -1,16 +1,16 @@
 //Aqui ficam as rotas
 const express = require ('express')
 const router = express.Router();
-const PostsService = require ('../service/postsService');
+const ReceptionService = require ('../service/receptionService');
 
-router.get('/evaluations', async function (req, res){
-    const posts = await PostsService.getEvaluations();
+router.get('/reception', async function (req, res){
+    const posts = await ReceptionService.getReception();
     res.json(posts);
 });
 
-router.post('/evaluations', async function (req, res){ 
+router.post('/reception', async function (req, res){ 
         const values = req.body
-        const posts = await PostsService.postEvaluations(values);        
+        const posts = await ReceptionService.postReception(values);        
         res.json(posts);
 });
 
