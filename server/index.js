@@ -8,12 +8,10 @@ const port = 3000;
 app.use(express.json())
 app.use('/', require('./route/receptionRoute'));
 app.use('/', require('./route/physiotherapyRoute'));
-
 app.listen(port)
 console.log(`Aplicação inicada na porta ${port}`);
+
 //Middleware nada mais é que um conversor da informação para JSON
-
-
 //req nada mais é do que a pergunta do servidor ou a requisição
 // res é a resposta do servidor
 

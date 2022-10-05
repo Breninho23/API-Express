@@ -14,7 +14,7 @@ COPY . .
 
 ENV PORT=3000
 
-ENV PG_HOST='localhost'
+ENV PG_HOST='172.17.0.1'
 ENV PG_USER='exiti'
 ENV PG_PASSWORD='2r2gexiti'
 ENV PG_DATABASE='backend' 
