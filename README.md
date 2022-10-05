@@ -49,10 +49,7 @@ Após a iniciação do projeto você pode entrar no : http://localhost:3000
 
 No caso eu utilizei o Postman mas você pode utilizar qualquer outra aplicação para testar as requisições passando os seguintes parametros:
 
-## Requisições de POST :
-```console
-localhost:3000/posts
-```
+## Requisições de Recepção :
 BODY para Recepção:
 
 ```console
@@ -98,38 +95,41 @@ Se tudo der certo será retornado o JSON inserido no banco da aplicação:
     "message" : "teste"  
 ```
 
-## Requisições de GET :
-```console
-localhost:3000/posts
-```
+## Requisições de GET recption ou physiotherapy:
 Através dessa requisição você receberá de volta todas as informações cadastradas na tabela do banco como o exemplo abaixo.
 ```console
-[
     {
-        "id": 1,
-        "receptionattendance": 1,
-        "receptiontime": 1,
-        "receptionnote": "primeiro",
-        "collectattendante": 1,
-        "collecttime": 1,
-        "collectnote": "primeiro",
+        "id": 3,
+        "codtype": 2,
+        "receptionattendance": null,
+        "receptiontime": null,
+        "receptionnote": null,
+        "collectattendante": null,
+        "collecttime": null,
+        "collectnote": null,
         "physiotherapyattendance": 1,
         "physiotherapytime": 1,
-        "physiotherapynote": "primeiro"
+        "physiotherapynote": "teste",
+        "contact": "(18) 00000-0000",
+        "suggestion": "",
+        "message": "ts"
     },
     {
-        "id": 2,
-        "receptionattendance": 2,
-        "receptiontime": 2,
-        "receptionnote": "segundo",
-        "collectattendante": 2,
-        "collecttime": 2,
-        "collectnote": "segundo",
-        "physiotherapyattendance": 2,
-        "physiotherapytime": 2,
-        "physiotherapynote": "segundo"
+       "id": 6,
+        "codtype": 1,
+        "receptionattendance": null,
+        "receptiontime": null,
+        "receptionnote": null,
+        "collectattendante": null,
+        "collecttime": null,
+        "collectnote": null,
+        "physiotherapyattendance": 1,
+        "physiotherapytime": 1,
+        "physiotherapynote": "teste",
+        "contact": "(18) 00000-0000",
+        "suggestion": "",
+        "message": "ts"
     }
-]
 ```
 
 
