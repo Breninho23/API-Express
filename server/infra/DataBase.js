@@ -10,15 +10,6 @@ const database = pgp({
 })
 */
 
-/*Para Local ##############################
-const database = pgp({
-    user: 'exiti',
-    password: '2r2gexiti',
-    host: 'localhost',
-    port: '5432',
-    database: 'backend'
-})
-*/
 const database = pgp({
     user: 'exiti',
     password: '2r2gexiti',

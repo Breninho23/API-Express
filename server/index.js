@@ -6,8 +6,7 @@ const app = express();
 //pela porta que você quer
 const port = 3000;
 app.use(express.json())
-app.use('/', require('./route/receptionRoute'));
-app.use('/', require('./route/physiotherapyRoute'));
+app.use('/', require('./route/Route'));
 app.listen(port)
 console.log(`Aplicação inicada na porta ${port}`);
 

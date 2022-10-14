@@ -2,7 +2,7 @@ create schema post;
 
 create table post.post (
     id serial primary key,
-    codType int,
+    type text,
     receptionAttendance int,
     receptionTime int,
     receptionNote text,
