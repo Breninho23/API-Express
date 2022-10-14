@@ -4,8 +4,8 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-Ese projeto consiste em uma API que recebe paramêtros por requisição e salva os mesmos no banco de dados.
-
+Esse projeto consiste em uma API que recebe paramêtros por requisição e salva os mesmos no banco de dados.
+O mesmo possui 2 branchs, a master possui duas URL's de requisição separadas enquanto a brach classesLimpas possui apenas uma.
 ```index.js
 const express = require('express');
 const app = express();
@@ -131,6 +131,20 @@ Através dessa requisição você receberá de volta todas as informações cada
         "message": "ts"
     }
 ```
+
+## Construir o projeto via docker:
+Primeiro vamo montar a imagem do docker, para isso acesse a pasta do projeto via terminal e execute o seguinte comando:
+```
+docker build . -t projeto/node-web-app
+```
+
+Agora você pode executar o comando para iniciar a aplicação via docker, no caso como estou utilizando um banco postgres local eu executo:
+```
+docker run --network host projeto/node-web-app
+```
+
+Caso você esteja executando o banco de dados em uma outra máquina ou container vale a pena dar uma olhada na documentação do docker na área de redes, e
+dependendo vale a pena você fazer um arquivo docker-compose.yml, você pode ver mais sobre docker aqui: https://docs.docker.com/
 
 
 
