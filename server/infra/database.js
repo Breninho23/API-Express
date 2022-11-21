@@ -12,19 +12,12 @@ const database = pgp({
 
 /*Para Local ##############################
 const database = pgp({
-    user: 'exiti',
-    password: '2r2gexiti',
-    host: 'localhost',
-    port: '5432',
-    database: 'backend'
+    user: '',
+    password: '',
+    host: '',
+    port: '',
+    database: ''
 })
 */
-const database = pgp({
-    user: 'exiti',
-    password: '2r2gexiti',
-    host: 'localhost',
-    port: '5432',
-    database: 'backend'
-})
 
 module.exports = database;
