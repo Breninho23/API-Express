@@ -11,11 +11,11 @@ const database = pgp({
 */
 
 const database = pgp({
-    user: 'exiti',
-    password: '2r2gexiti',
-    host: 'localhost',
-    port: '5432',
-    database: 'backend'
+    user: '',
+    password: '',
+    host: '',
+    port: '',
+    database: ''
 })
 
 module.exports = database;
