@@ -2,7 +2,7 @@
 
 [![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge)
 
 Esse projeto consiste em uma API que recebe paramêtros por requisição e salva os mesmos no banco de dados.
 O mesmo possui 2 branchs, a master possui duas URL's de requisição separadas enquanto a brach classesLimpas possui apenas uma.
